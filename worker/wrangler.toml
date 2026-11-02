@@ -1,0 +1,15 @@
+name = "pitchcountpassport"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "pitchcountpassport"
+database_id = "7a2d735a-66a0-4a4a-ab47-a5e0e42121d4"
+
+# Nightly cleanup of expired sessions / throttle buckets (04:10 UTC)
+[triggers]
+crons = ["10 4 * * *"]
+
+[observability]
+enabled = true
